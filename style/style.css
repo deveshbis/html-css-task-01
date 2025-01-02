@@ -4,7 +4,7 @@
 * {
   font-family: "Hind Siliguri", serif;
   margin: 0;
-  padding: 0;
+  padding: 2;
   box-sizing: border-box;
 }
 
@@ -63,11 +63,74 @@ section {
   margin-left: auto;
   margin-right: auto;
   width: 700;
-  font-size: 40px;
+  font-size: 30px;
 }
 
-.arrow{
-    width: 50px;
-    height: 35px;
+.arrow {
+  width: 50px;
+  height: 30px;
+}
 
+.circle {
+  z-index: 10;
+  position: absolute;
+  width: 132.31px;
+  height: 133.74px;
+  border: 20px;
+}
+
+.polygon {
+  z-index: 10;
+  position: absolute;
+  width: 50px;
+}
+
+.featureSection {
+  font-size: 60px;
+  color: #1b4b36;
+  font-weight: 700;
+  line-height: 100px;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+/* .box {
+  display: grid;
+  grid-template-columns: repeat(3);
+  gap: 5px;
+  margin-bottom: 20px;
+} */
+.box {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 406px;
+  border: 2px solid #1b4b36;
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  padding: 10px;
+  cursor: pointer;
+  h2 {
+    font-size: 20px;
+    color: #1b4b36;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.card:hover {
+  background-color: #1b4b36;
+  color: antiquewhite;
+  h2 {
+    font-size: 20px;
+    color: #ebff3d;
+  }
+  p {
+    font-size: 12px;
+  }
 }
