@@ -75,12 +75,23 @@ section {
   height: 30px;
 }
 
-/* Features Section */
+.orderButton:hover{
+  
+}
 
+
+
+
+/* Features Section */
 main {
   max-width: 1300px;
   margin: auto;
 }
+
+/* #features{
+  background-color: #FAFFCE;
+  width: 100%;
+} */
 
 .featureSection {
   font-size: 60px;
@@ -94,8 +105,9 @@ main {
 .box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 30px;
+  margin-bottom: 10px;
+  
 }
 
 .card {
@@ -106,6 +118,7 @@ main {
   border-bottom-right-radius: 35px;
   padding: 30px;
   cursor: pointer;
+  transition: all 2s;
   h2 {
     font-size: 36px;
     font-weight: 600;
@@ -223,6 +236,7 @@ footer{
     color: aliceblue;
     i{
       gap: 10px;
+      cursor: pointer;
     }
     
   }
