@@ -12,6 +12,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* img {
+    width: 100px;
+  } */
+  margin-top: 20px;
 }
 
 .sectionTilte {
@@ -25,13 +29,12 @@ header {
 
 .sectionSubTilte {
   text-align: center;
-  width: 501px;
-  height: 52px;
-  top: 454px;
-  left: 709px;
-  margin-top: 12px;
+  width: 90%;
+  max-width: 501px;
+  height: auto;
   padding: 10px;
   background-color: #ebff3d;
+  margin: 12px auto;
 }
 
 section {
@@ -41,10 +44,10 @@ section {
 }
 
 .bannerSection .banner {
-  width: 1000px;
+  width: 90%;
+  max-width: 1000px;
+  /* height: auto;  */
   height: 606px;
-  top: 605px;
-  left: 460px;
   border-radius: 20px;
   margin-top: 50px;
   border: 2px solid #ebff3d;
@@ -62,7 +65,8 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 700;
+  width: 90%;
+  max-width: 700px;
   font-size: 30px;
 }
 
@@ -71,18 +75,11 @@ section {
   height: 30px;
 }
 
-.circle {
-  z-index: 10;
-  position: absolute;
-  width: 132.31px;
-  height: 133.74px;
-  border: 20px;
-}
+/* Features Section */
 
-.polygon {
-  z-index: 10;
-  position: absolute;
-  width: 50px;
+main {
+  max-width: 1300px;
+  margin: auto;
 }
 
 .featureSection {
@@ -94,32 +91,32 @@ section {
   margin-right: 20px;
 }
 
-/* .box {
-  display: grid;
-  grid-template-columns: repeat(3);
-  gap: 5px;
-  margin-bottom: 20px;
-} */
 .box {
-  display: flex;
-  justify-content: space-around;
-  gap: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 .card {
   width: 406px;
+  height: 397px;
   border: 2px solid #1b4b36;
   border-top-left-radius: 35px;
   border-bottom-right-radius: 35px;
-  padding: 10px;
+  padding: 30px;
   cursor: pointer;
   h2 {
-    font-size: 20px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
     color: #1b4b36;
+    margin-bottom: 12px;
   }
   p {
-    font-size: 12px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
   }
 }
 
@@ -127,10 +124,429 @@ section {
   background-color: #1b4b36;
   color: antiquewhite;
   h2 {
-    font-size: 20px;
+    font-size: 36px;
     color: #ebff3d;
   }
   p {
+    font-size: 24px;
+  }
+}
+
+/* Client Experience Section */
+
+.experienceSection {
+  font-size: 60px;
+  color: #1b4b36;
+  font-weight: 700;
+  line-height: 100px;
+  margin-top: 50px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.experienceBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.experienceCard {
+  width: 567px;
+  height: 325px;
+  background-color: #1F4E37;
+  border-radius: 20px;
+  padding: 30px;
+  cursor: pointer;
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+  }
+  hr{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  h3{
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    line-height: 32px;
+  }
+  p {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #EBFF3D;
+    text-align: right;
+    line-height: 75px;
+  }
+  
+}
+
+.experienceOrderButton {
+  cursor: pointer;
+  color: #255239;
+  background-color: #ebff3d;
+  padding: 10px;
+  border-radius: 45px;
+  border: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 700px;
+  font-size: 30px;
+}
+.experienceArrow {
+  width: 50px;
+  height: 30px;
+}
+
+
+/* Footer Section */
+footer{
+  width: 100%;
+  margin-top: 50px;
+  /* margin-bottom: 10px; */
+}
+.footerFist{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0C3200;
+  padding: 20px;
+  h2{
+    color: aliceblue;
+    i{
+      gap: 10px;
+    }
+    
+  }
+  img{
+    width: 100px;
+  }
+
+}
+
+.footerSecond{
+  background-color: #0A2900;
+  text-align: center;
+  padding: 20px;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive tablet devices */
+
+@media (max-width: 768px) {
+  /* header{
+    width: 100%;
+  } */
+   div{
+    padding: 20px;
+   }
+  .sectionTilte {
+    font-size: 35px;
+    line-height: 70px;
+  }
+
+  .sectionSubTilte {
+    font-size: 20px;
+  }
+
+  .bannerSection .banner {
+    max-width: 90%;
+  }
+
+  .orderButton {
+    font-size: 25px;
+  }
+
+  /* Feature section */
+
+  .featureSection {
+    font-size: 35px;
+    line-height: 50px;
+    padding: 5px;
+  }
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #1b4b36;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    cursor: pointer;
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      color: #1b4b36;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 36px;
+    }
+  }
+  .card:hover {
+    background-color: #1b4b36;
+    color: antiquewhite;
+    h2 {
+      font-size: 16px;
+      color: #ebff3d;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+   /* Client Experience Section */
+   .experienceSection {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .experienceBox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+  }
+  
+  .experienceCard {
+    width: 300px;
+    height: 300px;
+    background-color: #1F4E37;
+    border-radius: 20px;
+    padding: 30px;
+    cursor: pointer;
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+    hr{
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    h3{
+      margin-top: 20px;
+      font-size: 16px;
+      color: white;
+      line-height: 32px;
+    }
+    p {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 36px;
+      color: #EBFF3D;
+      text-align: right;
+      line-height: 75px;
+    }
+    
+  }
+  
+}
+
+
+
+
+/* Responsive mobile devices */
+
+@media (max-width: 512px) {
+  /* header{
+    width: 100%;
+    height: auto;
+  } */
+  .sectionTilte {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .sectionSubTilte {
     font-size: 12px;
+    width: 100%;
+    padding: 2px;
+  }
+
+  .bannerSection .banner {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+  }
+
+  .orderButton {
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .arrow {
+    width: 20px;
+    height: 15px;
+  }
+
+  /* Features section */
+  .featureSection {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 5px;
+  }
+  .box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #1b4b36;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    padding: 20px;
+    cursor: pointer;
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      color: #1b4b36;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 36px;
+    }
+  }
+  .card:hover {
+    background-color: #1b4b36;
+    color: antiquewhite;
+    h2 {
+      font-size: 16px;
+      color: #ebff3d;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+
+  /* Client Experience Section */
+  .experienceSection {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .experienceBox {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+  
+  .experienceCard {
+    width: 300px;
+    height: 300px;
+    background-color: #1F4E37;
+    border-radius: 20px;
+    padding: 30px;
+    cursor: pointer;
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+    hr{
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    h3{
+      margin-top: 20px;
+      font-size: 16px;
+      color: white;
+      line-height: 32px;
+    }
+    p {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 36px;
+      color: #EBFF3D;
+      text-align: right;
+      line-height: 75px;
+    }
+    
+  }
+  .experienceOrderButton {
+    font-size: 16px;
+    border-radius: 20px;
+  }
+  .experienceArrow {
+    width: 20px;
+    height: 15px;
+  }
+
+
+
+  /* Footer Section */
+  footer{
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .footerFist{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+    background-color: #0C3200;
+    padding: 20px;
+    font-size: 8px;
+    h2{
+      color: aliceblue;
+      i{
+        gap: 10px;
+      }
+      
+    }
+    img{
+      width: 100px;
+    }
+  
+  }
+  
+  .footerSecond{
+    background-color: #0A2900;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+    font-size: 10px;
   }
 }
